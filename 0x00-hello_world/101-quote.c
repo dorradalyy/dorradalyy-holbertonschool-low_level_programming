@@ -1,13 +1,21 @@
 #include <stdio.h>
+#include <unisd.h>
 
 /**
- * main - Entry point
+ * main - run all function
  *
- * Return: Always 0 (Success)
+ * Description: Change standart error message
+ * Return: Return 1 and exit
  */
 int main(void)
 {
-	printf("and that piece of art is useful" - Dora Korpar, 2015-10-19\n");
+	int l;
+
+	l =
+	 sizeof("and that piece of art is useful" - Dora Korpar, 2015-10-19");
+	
+	write(2,
+	      "and that piece of art is useful - Dora korpar, 2015-10-19\n", l);
 	return (1);
 }
 
