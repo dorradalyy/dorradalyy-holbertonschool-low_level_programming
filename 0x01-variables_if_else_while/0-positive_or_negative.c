@@ -1,6 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/**
+* main - block main
+* Return: 0
+*/
 int main(void)
 {
 	int n;
