@@ -2,9 +2,9 @@
 /**
 * time_table - check the code for Holberton School students.
 *
-* Return: nothing.
+* Return: Always 0.
 */
-void time_table(void)
+void times_table(void)
 {
 int a, b;
 a = 0;
