@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-
 /**
  * mul - check the code for Holberton School students.
  * @a : int
