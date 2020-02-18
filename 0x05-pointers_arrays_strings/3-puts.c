@@ -1,11 +1,12 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * _puts - check the code for Holberton School students.
- * @str: char
- * Return: Always 0.
+ * _puts - prints a string to stdout
+ *
+ * @str: string to print
+ * Return: void
  */
+
 void _puts(char *str)
 {
 int x;
