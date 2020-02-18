@@ -3,15 +3,15 @@
 
 /**
  * _puts - check the code for Holberton School students.
- * @str : char
+ * @str: char
  * Return: Always 0.
  */
 void _puts(char *str)
 {
-int g;
-for (g = 0 ; str[g] != '\0' ; g++)
+int x;
+for (x = 0; str[x] != '\0'; x++)
 {
-_putchar(str[g]);
+_putchar(str[x]);
 }
 _putchar('\n');
 }
