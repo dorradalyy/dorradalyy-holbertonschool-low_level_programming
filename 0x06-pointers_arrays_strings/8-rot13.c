@@ -13,13 +13,10 @@ char d[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
 char g[] = "nopqrstuvwxyzabcdefghijklm";
 for (i = 0; s[i] != '\0'; i++)
 {
-for (j = 0; j < 50; j++)
+if ((s[i] > 64 && s[i] < 91) || (s[i] > 96 && s[i] < 123))
 {
-if (d[j] == s[i])
-{
-s[i] = g[j];
-break;
-}
+s[i] = (s[i] - 65 > 25) ?
+g[s[i] - 97] : d[s[i] - 65];
 }
 }
 return (s);
