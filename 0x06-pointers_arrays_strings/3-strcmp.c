@@ -13,7 +13,7 @@ int d;
 for (d = 0; s2[d] != '\0'; d++)
 {
 if (s1[d] != s2[d])
-}
 return (s1[d] - s2[d]);
 }
 return (0);
+}
