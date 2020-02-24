@@ -9,18 +9,16 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-int dd = 0, gg = 0;
-for (dd = 0; s[dd] != '\0'; dd++)
+unsigned int dd, gg;
+for (dd = 0; s[dd]; dd++)
 {
 for (gg = 0; accept[gg]; gg++)
 {
-if (accept[gg] == s[dd])
-{
+if (s[dd] == accept[gg])
 break;
 }
-if (accept[gg] != s[dd])
+if (!accept[gg])
 break;
-}
 }
 return (dd);
 }
