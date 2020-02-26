@@ -1,27 +1,33 @@
 #include "holberton.h"
+
 /**
- * is_prime_number - check the code for Holberton School students.
- * @n: int
- * Return: Always 0.
+ * is_prime_number - returns 1 if the input integer is a prime number
+ * otherwise return 0
+ * @n: input number
+ *
+ * Return: int
  */
+
 int is_prime_number(int n)
 {
-if (n == 2)
-return (1);
-return (pn(2, n));
-}
-/**
- * pn - check the code for Holberton School students.
- * @i: int
- * @n: int
- * Return: Always 0.
- */
-int pn(int i, int n)
-{
-if (n < 2)
+if (n <= 1)
 return (0);
-else if (i > n / 2)
+return (getNumPrim(n, 2));
+}
+
+/**
+ * getNumPrim - function that gets if num is 0 or 1
+ *
+ * @num: input number
+ * @i: Counter variable
+ * Return: int
+ */
+
+int getNumPrim(int num, int i)
+{
+if (num == i)
 return (1);
-else
-return (pn(i + 1, n));
+if (num % i == 0)
+return (0);
+return (getNumPrim(num, i + 1));
 }
