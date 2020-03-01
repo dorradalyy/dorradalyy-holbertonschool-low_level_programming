@@ -3,24 +3,31 @@
 /**
  * main - check the code for Holberton School students.
  * @argc: int
- * @argv : int
+ * @argv: int
  * Return: Always 0.
  */
 
 int main(int argc, char *argv[])
 {
-int i, sum = 0;
-if (argc < 1)
-return (0);
-for (i = 1; i < argc; i++)
+int dd, g;
+char *p;
+int num;
+
+dd = 0;
+if (argc > 1)
 {
-if (!atoi(argv[i]))
+for (g = 1; argv[g]; g++)
 {
-printf("%s\n", "Error");
+num = strtol(argv[g], &p, 10);
+if (!*p)
+dd += num;
+else
+{
+printf("Error\n");
 return (1);
 }
-sum += atoi(argv[i]);
 }
-printf("%d\n", sum);
+}
+printf("%d\n", dd);
 return (0);
 }
