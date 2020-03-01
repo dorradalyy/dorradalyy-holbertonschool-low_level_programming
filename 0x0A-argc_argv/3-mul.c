@@ -1,5 +1,6 @@
+#include "holberton.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - function to prnt all the arg
  * @argc: int
