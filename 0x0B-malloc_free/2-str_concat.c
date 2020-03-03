@@ -30,5 +30,4 @@ b++;
 c++;
 }
 return (i);
-free(i);
 }
