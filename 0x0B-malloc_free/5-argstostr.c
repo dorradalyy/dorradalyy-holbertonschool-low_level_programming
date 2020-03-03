@@ -1,20 +1,43 @@
-#include "holberton.h"
 #include <stdlib.h>
+#include "holberton.h"
 /**
- * free_grid - use free function on previous grid
- * @grid: int
- * @height: int
- * Return: Always 0.
+ *argstostr - concatenates all the arguements of your program
+ *@ac: int
+ *@av: int
+ * Return: pointer to string
  */
-void free_grid(int **grid, int height)
+char *argstostr(int ac, char **av)
 {
-int i;
-if (grid != NULL || height != 0)
+char *str, *begin;
+int i, j, h;
+if (ac == 0 || av == NULL)
+return (NULL);
+for (i = 0; i < ac; i++)
 {
-for (i = 0; i < height; i++)
+j = 0;
+while (av[i][j] != '\0')
 {
-free(grid[i]);
+j++;
+h++;
 }
-free(grid);
+h++;
 }
+h++;
+str = malloc(h *sizeof(char));
+if (str == NULL)
+return (NULL);
+begin = str;
+for (i = 0; i < ac; i++)
+{
+j = 0;
+while (av[i][j] != '\0')
+{
+*str = av[i][j];
+j++;
+str++;
+}
+*str = '\n';
+str++;
+}
+return (begin);
 }
